@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h1>Calcular Factorial</h1>
+        <p>En este ejercicio se realizan validaciones de: </p>
+        <p>- Ingreso de datos vacíos</p>
+        <p>- Ingreso de un número mayor a 20 para que el factorial no sea tan grande</p>
+        <br>
+        <label for="numero-factorial">Ingrese un número para calcular su factorial</label>
+        <input type="text" id="numero-factorial" placeholder="Numeros entre 1 y 20">
+        <button onclick="factorial()">Consultar</button>
+        <p>Estado de solicitud: <strong id="estado-solicitud" style="color: rgb(255, 153, 0);">En espera -</strong><span id="texto-solicitud" style="color: rgb(255, 153, 0);"> esperando el input</span></p>
+        <p class="apartado-resultado">El factorial es: <span id="resultado"></span></p>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
